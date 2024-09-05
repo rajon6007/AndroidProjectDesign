@@ -1,12 +1,15 @@
 
 import kotlin.math.abs
+import java.util.Scanner
 fun main(args: Array<String>) {
 
+    val x = Scanner(System.`in`)
 
-    val a = readLine()!!.toInt()
-    val b = readLine()!!.toInt()
-    val c = readLine()!!.toInt()
-    val maxAB = (a+b+abs(a-b))/2
-    val maxABC = (maxAB+c+abs(maxAB-c))/2
-    println("$maxABC eh o maior")
+
+    val a = x.nextInt()
+    val b = x.nextInt()
+    val c = x.nextInt()
+    val d = (a+b+abs(a-b))/2
+    val e = (d+c+abs(d-c))/2
+    println("$e eh o maior")
 }

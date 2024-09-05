@@ -1,10 +1,15 @@
+
+import java.util.*
 fun main(args: Array<String>) {
 
+    val a = Scanner(System.`in`)
 
-    val X = readLine()!!.toInt()
-    val Y = readLine()!!.toFloat()
+
+
+    val X = a.nextInt()
+    val Y = a.nextFloat()
 
     val average = X/Y
 
-    println("$average km/1 %.3f".format())
+    println("%.3f km/l".format(average))
 }
